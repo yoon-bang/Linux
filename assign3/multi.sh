@@ -9,7 +9,7 @@ for i in $(seq 1 ${row})
 do
 	for j in $(seq 1 ${col})
 	do
-		multi=`expr $i \* 1`
+		multi=`expr $i \* $j`
 		echo -n "${i}*${j}=$multi "
 	done
 	echo ""
